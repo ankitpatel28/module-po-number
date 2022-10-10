@@ -1,9 +1,7 @@
 {
     "name": "ankitdev/module-po-number",
     "description": "Add a po number to Magento 2 checkout on the first step",
-    "require": {
-        "shoptimize/magento-platform": "*"
-    },
+    "require": {},
     "type": "magento2-module",
     "version": "1.0.0",
     "license": [

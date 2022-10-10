@@ -1,0 +1,19 @@
+<?php
+/** @var Ankitdev\PoNumber\Block\Order\PoNumber $block */
+
+/** @var Ankitdev\PoNumber\Model\Data\PoNumber $PoNumber */
+$PoNumber = $block->getPoNumber($block->getOrder());
+?>
+<?php if($PoNumber): ?>
+    <div class="block block-order-details-view">
+        <div class="block-title"><strong><?php /* @escapeNotVerified */ echo __('Other information') ?></strong></div>
+        <div class="block-content">
+            <div class="box">
+                <div class="box-content">
+                    <strong><?php /* @escapeNotVerified */ echo __('Purchase order no.') ?>:</strong>
+                    <?php echo $this->escapeHtml($PoNumber->getCheckoutPurchaseOrderNo()); ?><br>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>

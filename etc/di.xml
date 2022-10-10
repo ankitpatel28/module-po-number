@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Ankitdev\PoNumber\Api\Data\PoNumberInterface" type="Ankitdev\PoNumber\Model\Data\PoNumber" />
+    <preference for="Ankitdev\PoNumber\Api\PoNumberRepositoryInterface" type="Ankitdev\PoNumber\Model\PoNumberRepository" />
+    <preference for="Ankitdev\PoNumber\Api\PoNumberGuestRepositoryInterface" type="Ankitdev\PoNumber\Model\PoNumberGuestRepository" />
+</config>

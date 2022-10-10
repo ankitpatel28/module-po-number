@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="checkout.root">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="checkout" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="steps" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="shipping-step" xsi:type="array">
+                                            <item name="children" xsi:type="array">
+                                                <item name="shippingAddress" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="po-number-checkout-form" xsi:type="array">
+                                                            <item name="component" xsi:type="string">uiComponent</item>
+                                                            <item name="displayArea" xsi:type="string">po-number-checkout-form</item>
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="po-number-checkout-form-container" xsi:type="array">
+                                                                    <item name="sortOrder" xsi:type="string">0</item>
+                                                                    <item name="component" xsi:type="string">Ankitdev_PoNumber/js/view/checkout/po-number-checkout-form</item>
+                                                                    <item name="provider" xsi:type="string">checkoutProvider</item>
+                                                                    <item name="config" xsi:type="array">
+                                                                        <item name="template" xsi:type="string">Ankitdev_PoNumber/checkout/po-number-checkout-form</item>
+                                                                    </item>
+                                                                    <item name="children" xsi:type="array">
+                                                                        <item name="po-number-checkout-form-fieldset" xsi:type="array">
+                                                                            <item name="component" xsi:type="string">uiComponent</item>
+                                                                            <item name="displayArea" xsi:type="string">po-number-checkout-form-fields</item>
+                                                                            <item name="children" xsi:type="array">
+                                                                                <item name="checkout_purchase_order_no" xsi:type="array">
+                                                                                    <item name="component" xsi:type="string">Magento_Ui/js/form/element/abstract</item>
+                                                                                    <item name="config" xsi:type="array">
+                                                                                        <item name="customScope" xsi:type="string">poNumberCheckoutForm</item>
+                                                                                        <item name="template" xsi:type="string">ui/form/field</item>
+                                                                                        <item name="elementTmpl" xsi:type="string">ui/form/element/input</item>
+                                                                                    </item>
+                                                                                    <item name="validation" xsi:type="array">
+                                                                                        <item name="validate-alphanum" xsi:type="boolean">true</item>
+                                                                                        <item name="max_text_length" xsi:type="number">15</item>
+                                                                                    </item>
+                                                                                    <item name="provider" xsi:type="string">checkoutProvider</item>
+                                                                                    <item name="dataScope" xsi:type="string">poNumberCheckoutForm.checkout_purchase_order_no</item>
+                                                                                    <item name="label" xsi:type="string">Purchase order no.</item>
+                                                                                    <item name="sortOrder" xsi:type="string">3</item>
+                                                                                </item>
+                                                                            </item>
+                                                                        </item>
+                                                                    </item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

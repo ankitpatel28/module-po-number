@@ -1,5 +1,5 @@
 {
-    "name": "ankit/module-po-number",
+    "name": "ankitdev/module-po-number",
     "description": "Add a po number to Magento 2 checkout on the first step",
     "type": "magento2-module",
     "license": "mit",
